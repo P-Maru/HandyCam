@@ -1,0 +1,6 @@
+#가상환경 씨발놈아
+myvenv/
+
+#pyc
+*pyc
+db.sqlite3
