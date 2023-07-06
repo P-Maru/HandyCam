@@ -1,0 +1,69 @@
+.Service{
+  width:92%;
+  height: 70vh;
+  display:flex;
+  /* padding-top: 100px; */
+  margin:0% 4% 4% 4%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Service_Left{
+  width: auto;
+  height: auto;
+}
+
+.Service_Center{
+  width: auto;
+  height: auto;
+}
+
+.Service_Right{
+  width: auto;
+  height: auto;
+}
+
+.Service_LeftBtn{
+  width: 450px;
+  height: 350px;
+  font-family: 'Jua', sans-serif;
+  font-size: 80px;
+  background-color: white;
+  border-radius: 10px;
+  border: 5px dashed black;
+  cursor: pointer;
+}
+
+.Service_CenterBtn{
+  width: 450px;
+  height: 350px;
+  font-family: 'Jua', sans-serif;
+  font-size: 80px;
+  background-color: white;
+  border-radius: 10px;
+  border: 5px dashed black;
+  cursor: pointer;
+}
+
+.Service_RightBtn{
+  width: 450px;
+  height: 350px;
+  font-family: 'Jua', sans-serif;
+  font-size: 80px;
+  background-color: white;
+  border-radius: 10px;
+  border: 5px dashed black;
+  cursor: pointer;
+}
+
+.Service_LeftBtn:hover{
+  color:#FFCBA4;
+}
+
+.Service_CenterBtn:hover{
+  color:#FFCBA4;
+}
+
+.Service_RightBtn:hover{
+  color:#FFCBA4;
+}

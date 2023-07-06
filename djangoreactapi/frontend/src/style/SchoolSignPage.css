@@ -1,0 +1,19 @@
+.SchoolSignPage{
+  width: 92%;
+  height: 92vh;
+  display: flex;
+  margin: 0 auto;
+}
+
+.SchoolleftSide{
+  width: 20%;
+  border-right: 3px solid black;
+  display: flex;
+  justify-content: center;
+  font-family: 'Jua', sans-serif;
+}
+
+#SchoolTitle{
+  margin-top: 20%;
+  font-size: 30pt;
+}

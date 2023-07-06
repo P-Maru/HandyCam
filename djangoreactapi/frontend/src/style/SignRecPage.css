@@ -1,0 +1,15 @@
+.SignRectPage{
+  width: 92%;
+  height: 92vh;
+  display: flex;
+  margin: 0 auto;
+}
+
+.image_div{
+  height: 80vh;
+  text-align: center;
+}
+
+.Sign_image{
+  margin-top: 3%;
+}
