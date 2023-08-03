@@ -38,13 +38,28 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'post',
+    'channels',
     'rest_framework',
     'corsheaders',
 ]
 
+# ASGI_APPLICATION = "djangoreactapi.routing.application"
+
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "channels_redis.core.RedisChannelLayer",
+#         "CONFIG": {
+#             # Redis 서버 주소와 포트
+#             "hosts": [("localhost", 6379)],
+#         },
+#     },
+# }
+
 rest_framework = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
     ]
 }
 MIDDLEWARE = [
@@ -54,6 +69,8 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -63,9 +80,38 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = [
     'https://localhost:3000',
 ]
+ALLOWED_HOSTS = [
+    'localhost'
+]
+
+CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
+
+
+CORS_ALLOW_ALL_ORIGINS = True 
+# settings.py
+
+CORS_ALLOW_ORIGIN = "http://localhost:3000"
+
 
 CORS_ORIGIN_ALLOW_ALL = True
+
 ROOT_URLCONF = 'djangoreactapi.urls'
+
+CORS_ALLOW_METHODS = [
+    "GET", "POST",  # GET 및 POST 요청을 허용합니다. 필요에 따라 다른 메서드도 추가 가능합니다.
+]
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
 
 TEMPLATES = [
     {
