@@ -1,4 +1,4 @@
-.SignRectPage{
+.WebcamStreamPagePage{
   width: 92%;
   height: 92vh;
   display: flex;
@@ -6,10 +6,34 @@
 }
 
 .image_div{
-  height: 80vh;
   text-align: center;
+  margin-bottom: 1%;
+  width: 210px;
 }
 
 .Sign_image{
   margin-top: 3%;
+}
+
+.Sign_image_text{
+  font-size: 25px;
+  font-family: 'Jua', sans-serif;
+  display: inline;
+  text-align: center;
+  margin: 15px;
+}
+
+.stop_btn{
+  font-size: 30px;
+  color: black;
+  font-family: 'Jua', sans-serif;
+  background: transparent;
+  border-radius: 20px;
+  width: 720px;
+  margin-bottom: 25px;
+}
+
+.stop_btn:hover{
+  color: #FFCBA4;
+
 }

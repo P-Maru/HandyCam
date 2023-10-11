@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { createBrowserHistory } from "history";
+import "../style/SignRecPage.css";
 
 const WebcamStreamPage = () => {
   const videoRef = useRef(null);
@@ -69,7 +70,9 @@ const WebcamStreamPage = () => {
 
     const getVideoStream = async () => {
       try {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        const stream = await navigator.mediaDevices.getUserMedia({
+          video: true,
+        });
         videoRef.current.srcObject = stream;
         console.log("hi stream");
 
@@ -108,12 +111,36 @@ const WebcamStreamPage = () => {
   };
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <h1 style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px" }}>
-            어디가 아프신가요?
+    <div
+      className="background"
+      style={{
+        backgroundImage: "url(./background.png)",
+        backgroundSize: "cover",
+        width: "100%",
+        height: "auto",
+        backgroundRepeat: "repeat-y",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "50px",
+          fontWeight: "bold",
+          marginBottom: "10px",
+          fontFamily: "'Jua', sans-serif",
+        }}
+      >
+        카메라를 보면서 수어를 해주세요.
       </h1>
-      <video ref={videoRef} autoPlay playsInline style={{ width: 800, height: 800, margin: "auto" }} />
-  
+      <video
+        ref={videoRef}
+        autoPlay
+        playsInline
+        style={{ width: 720, height: 640, margin: "auto" }}
+      />
+
       {/* 수화 인식한 문장 표시 */}
       {/* <div
         style={{
@@ -126,29 +153,23 @@ const WebcamStreamPage = () => {
           margin: "20px 0",
         }}
       > */}
+      <div className="image_div">
         {recognizedSign.map((sign, index) => (
-          <p key={index} style={{background: "rgba(255, 255, 255, 0.8)",
-          padding: "0px 0px",
-          borderRadius: "8px",
-          fontSize: "20px",
-          fontWeight: "bold",
-          textAlign: "center",
-          margin: "20px 0",}}>{sign}</p>
+          <p className="Sign_image_text" key={index} style={{}}>
+            {sign}
+          </p>
         ))}
-      {/* </div> */}
-  
+        {/* </div> */}
+      </div>
+
       {/* "stop" 버튼을 렌더링합니다. */}
       {streamStarted && (
-        <button
-          style={{ fontSize: "20px" }}
-          onClick={stopWebCam}
-        >
-          정지
+        <button className="stop_btn" onClick={stopWebCam}>
+          카메라 종료를 원하신다면 버튼을 눌러주세요.
         </button>
       )}
     </div>
   );
-  
 };
 
 export default WebcamStreamPage;
