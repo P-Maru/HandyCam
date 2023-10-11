@@ -5,10 +5,46 @@
   margin: 0 auto;
 }
 
+.SignRecPage{
+  width: 92%;
+  height: 92vh;
+  display: flex;
+  margin: 0 auto;
+}
+
+.SignRecLeftSide{
+  width: 50%;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.SignRecRightSide{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-weight: bold;
+  height: auto;
+  width: 50%;
+  align-items: center;
+}
+
+.SignRecResult{
+  border: solid 2px black;
+  display: flex;
+  width: 720px;
+  height: 530px;
+  align-items: center;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  margin-top: 6%;
+}
+
 .image_div{
   text-align: center;
+  margin-top: 5%;
   margin-bottom: 1%;
-  width: 210px;
 }
 
 .Sign_image{
@@ -16,7 +52,7 @@
 }
 
 .Sign_image_text{
-  font-size: 25px;
+  font-size: 45px;
   font-family: 'Jua', sans-serif;
   display: inline;
   text-align: center;
@@ -36,4 +72,15 @@
 .stop_btn:hover{
   color: #FFCBA4;
 
+}
+
+.clear_btn{
+  font-size: 30px;
+  color: black;
+  font-family: 'Jua', sans-serif;
+  background: transparent;
+  border-radius: 20px;
+  width: 720px;
+  margin-bottom: 25px;
+  margin-top : 6.5%;
 }
