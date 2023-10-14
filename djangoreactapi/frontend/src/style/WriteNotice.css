@@ -1,4 +1,4 @@
-.WriteBoard{
+.WriteNotice{
   width: 92%;
   height: 92vh;
   display: flex;
@@ -57,7 +57,7 @@ th{
   height: 30px;
 }
 
-.writeBoard_btn{
+.writeNotice_btn{
   width: 100px !important;
   height: 50px !important;
   font-family: 'Jua', sans-serif;
@@ -67,11 +67,11 @@ th{
   cursor: pointer;
 }
 
-.writeBoard_btn_div{
+.writeNotice_btn_div{
   text-align: right;
 }
 
-.writeBoard_btn:hover{
+.writeNotice_btn:hover{
   background-color: #6E6E6E;
   color: white;
 }

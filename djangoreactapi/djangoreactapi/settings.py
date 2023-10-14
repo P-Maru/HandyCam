@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
+import my_settings
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r_7ym#nd$7gd6dq($^(!1c-k00u(&h=63nsey0yq57$&#d@)8p'
+# SECRET_KEY = 'django-insecure-r_7ym#nd$7gd6dq($^(!1c-k00u(&h=63nsey0yq57$&#d@)8p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -81,7 +81,7 @@ CORS_ORIGIN_WHITELIST = [
     'https://localhost:3000',
 ]
 ALLOWED_HOSTS = [
-    'localhost'
+    '*'
 ]
 
 CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
@@ -135,12 +135,15 @@ WSGI_APPLICATION = 'djangoreactapi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+#DATABASES = {
+#    'default': {
+#       'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': BASE_DIR / 'db.sqlite3',
+#    }
+#}
+
+DATABASES = my_settings.DATABASES
+SECRET_KEY = my_settings.SECRET_KEY
 
 
 # Password validation

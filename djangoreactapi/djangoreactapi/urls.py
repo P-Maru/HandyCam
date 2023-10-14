@@ -16,11 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from post.api import MemberList,MemberDetail,BoardDetail,BoardList,SearchDetail,SearchList
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('post.urls')),
-   
+    path('api/member_list',MemberList.as_view(),name='member_list'),
+    path('api/member_list/<str:member_id>',MemberDetail.as_view(),name='member_list'),
+    path('api/board_list',BoardList.as_view(),name='board_list'),
+    path('api/board_list/<int:board_id>',BoardDetail.as_view(),name='board_list'),
+    path('api/search_list',SearchList.as_view(),name='search_list'),
+    path('api/search_list/<int:serach_id>',SearchDetail.as_view(),name='search_list'),
 ]
