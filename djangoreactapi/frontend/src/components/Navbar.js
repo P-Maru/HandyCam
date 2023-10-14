@@ -7,7 +7,7 @@ function Navbar() {
       <div className="navbar-1">
         <span className="navbar-logo" style={{ marginTop: "20px" }}>
           <Link to="/">
-            <img src="./logo2.png" id="logo-link" alt="None" />
+            <img src="./logo.png" id="logo-link" alt="None" />
           </Link>
         </span>
         <div className="search">

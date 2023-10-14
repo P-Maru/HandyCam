@@ -55,7 +55,7 @@ function NoticePage() {
         <div className="NoticeleftSide">
           <h1 id="NoticeTitle">공지사항</h1>
           <div className="NoticeleftSideBtn">
-            <Link to="/WriteBoard" id="WriteBoardBtn">
+            <Link to="/WriteNotice" id="WriteNoticeBtn">
               글쓰기
             </Link>
           </div>
@@ -76,7 +76,7 @@ function NoticePage() {
                 <tr key={board.id}>
                   <td>{board.id}</td>
                   <td>
-                    <Link className="noticename" to={`/board/${board.id}`}>
+                    <Link className="noticename" to={`/NoticePage/${board.id}`}>
                       {board.title}
                     </Link>
                   </td>

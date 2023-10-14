@@ -76,7 +76,7 @@ function BoardPage() {
                   <tr key={board.id}>
                     <td>{board.id}</td>
                     <td>
-                      <Link className="boardname" to={`/board/${board.id}`}>
+                      <Link className="boardname" to={`/BoardPage/${board.id}`}>
                         {board.title}
                       </Link>
                     </td>

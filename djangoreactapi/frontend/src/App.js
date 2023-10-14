@@ -17,7 +17,10 @@ import MedicalEquipmentSignlist from "./page/MedicalEquipmentSignlist.js";
 import SchoolSignPage from "./page/SchoolSignPage.js";
 import BoardPage from "./page/BoardPage.js";
 import WriteBoard from "./page/WriteBoard.js";
+import BoardContentPage from "./page/BoardContentPage.js";
 import NoticePage from "./page/NoticePage.js";
+import NoticeContentPage from "./page/NoticeContentPage.js";
+import WriteNotice from "./page/WriteNotice";
 
 import Service from "./page/Service.js";
 import SignRecPage from "./page/SignRecPage.js";
@@ -52,8 +55,11 @@ function App() {
           ></Route>
           <Route path="/SchoolSignPage" element={<SchoolSignPage />}></Route>
           <Route path="/BoardPage" element={<BoardPage />}></Route>
+          <Route path="/BoardPage/:id" element={<BoardContentPage />}></Route>
           <Route path="/WriteBoard" element={<WriteBoard />}></Route>
           <Route path="/NoticePage" element={<NoticePage />}></Route>
+          <Route path="/NoticePage/:id" element={<NoticeContentPage />}></Route>
+          <Route path="/WriteNotice" element={<WriteNotice />}></Route>
           <Route path="/Service" element={<Service />}></Route>
           <Route path="/SignRecPage" element={<SignRecPage />}></Route>
           <Route path="/ObjectRecPage" element={<ObjectRecPage />}></Route>

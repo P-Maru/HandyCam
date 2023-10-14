@@ -1,7 +1,7 @@
-import "../style/WriteBoard.css";
+import "../style/WriteNotice.css";
 import { Link } from "react-router-dom";
 
-function WriteBoard() {
+function WriteNotice() {
   return (
     <div
       className="background"
@@ -13,8 +13,8 @@ function WriteBoard() {
         backgroundRepeat: "repeat-y",
       }}
     >
-      <h1 className="title_name">게시판 글 작성</h1>
-      <div className="WriteBoard">
+      <h1 className="title_name">공지사항 글 작성</h1>
+      <div className="WriteNotice">
         <form>
           <table className="write_form" width="800">
             <tr>
@@ -47,8 +47,8 @@ function WriteBoard() {
             </tr>
             <tr>
               <td colSpan={2}>
-                <div className="writeBoard_btn_div">
-                  <Link className="writeBoard_btn" to={"/BoardPage"}>
+                <div className="writeNotice_btn_div">
+                  <Link className="writeNotice_btn" to={"/NoticePage"}>
                     저장
                   </Link>
                 </div>
@@ -61,4 +61,4 @@ function WriteBoard() {
   );
 }
 
-export default WriteBoard;
+export default WriteNotice;
