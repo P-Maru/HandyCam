@@ -1,0 +1,7 @@
+/* font.css */
+@font-face {
+  font-family: 'BlackHanSans';
+  src: url('./fonts/BlackHanSans-Regular.ttf') format('truetype'); /* 폰트 파일 경로와 형식 지정 */
+  font-weight: normal;
+  font-style: normal;
+}

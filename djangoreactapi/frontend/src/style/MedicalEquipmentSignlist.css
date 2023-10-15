@@ -11,7 +11,7 @@
   display: block;
   justify-content: center;
   text-align: center;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
 }
 
 .HospitalleftSideBtn{
@@ -30,7 +30,7 @@
   display: inline-block;
   font-size:35px;
   color: black;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
@@ -46,7 +46,7 @@
   width: fit-content;
   font-size:35px;
   color: black;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
@@ -61,7 +61,7 @@
   width: fit-content;
   font-size:35px;
   color: black;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
@@ -76,7 +76,7 @@
   width: fit-content;
   font-size:35px;
   color: #FFCBA4;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
@@ -113,7 +113,7 @@
 .DoctorSignExplain{
   font-size:30px;
   color: black;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   text-decoration: none;
   cursor: pointer;
   margin-top: 4%;

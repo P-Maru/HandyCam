@@ -53,7 +53,7 @@
 
 .Sign_image_text{
   font-size: 45px;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   display: inline;
   text-align: center;
   margin: 15px;
@@ -62,7 +62,7 @@
 .stop_btn{
   font-size: 30px;
   color: black;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   background: transparent;
   border-radius: 20px;
   width: 720px;
@@ -77,7 +77,7 @@
 .clear_btn{
   font-size: 30px;
   color: black;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   background: transparent;
   border-radius: 20px;
   width: 720px;
