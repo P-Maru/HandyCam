@@ -68,7 +68,7 @@ const WebcamStreamPage = () => {
 
     const startInterval = () => {
       // 서버로 주기적으로 요청 보내기
-      intervalId = setInterval(sendWebcamStream, 1000); // 10초마다 요청 보냄
+      intervalId = setInterval(sendWebcamStream, 300); // 10초마다 요청 보냄
     };
 
     const getVideoStream = async () => {
@@ -137,7 +137,7 @@ const WebcamStreamPage = () => {
               fontSize: "50px",
               fontWeight: "bold",
               marginBottom: "10px",
-              fontFamily: "'Jua', sans-serif",
+              fontFamily: "'BlackHanSans', sans-serif",
             }}
           >
             카메라를 보면서 수어를 해주세요.
@@ -161,7 +161,7 @@ const WebcamStreamPage = () => {
               fontSize: "50px",
               fontWeight: "bold",
               marginBottom: "10px",
-              fontFamily: "'Jua', sans-serif",
+              fontFamily: "'BlackHanSans', sans-serif",
             }}
           >
             번역한 수어 내용이 아래에 나타납니다.

@@ -6,7 +6,7 @@
 }
 
 .title_name{
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   text-align: center;
   margin-top: 3%;
 }
@@ -19,13 +19,13 @@
 }
 
 tr{
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   height: 50px;
   width: 100%;
 }
 
 th{
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   text-align: center;
   font-size: 20pt;
 }
@@ -60,7 +60,7 @@ th{
 .writeNotice_btn{
   width: 100px !important;
   height: 50px !important;
-  font-family: 'Jua', sans-serif;
+  font-family: 'BlackHanSans', sans-serif;
   font-size: 20pt;
   color: black;
   text-decoration: none;

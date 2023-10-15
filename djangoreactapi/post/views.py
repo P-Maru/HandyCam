@@ -21,7 +21,7 @@ from PIL import ImageFont, ImageDraw, Image
 import time
 import os
 # Create your views here.
-actions = ['아픕니다','배가','머리가','팔이','다리가']
+actions = ['배가','팔이','머리가','다리가','눈이','어깨가','조금','많이','적당히','아픕니다.']
 seq_length = 30
 
 #model = keras.models.load_model('/models/model.h5')
@@ -106,7 +106,9 @@ def start_camera_and_translate(request):
     if result.multi_hand_landmarks is not None:
       for res in result.multi_hand_landmarks:
           joint = np.zeros((21, 4))
+
           for j, lm in enumerate(res.landmark):
+            print(lm)
             joint[j] = [lm.x, lm.y, lm.z, lm.visibility]
                 # Compute angles between joints
           v1 = joint[[0, 1, 2, 3, 0, 5, 6, 7, 0, 9, 10, 11, 0, 13, 14, 15, 0, 17, 18, 19], :3]  # Parent joint
