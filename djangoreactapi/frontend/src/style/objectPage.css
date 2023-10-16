@@ -1,53 +1,54 @@
 .ObjectRecPage {
-  height: 100%;
-  padding: 0 10px;
-  position: relative;
+  width: 92%;
+  height: 92vh;
   display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ObjectRecLeftSide{
+  width: 50%;
+  display: block;
   justify-content: center;
-  align-items: center;
-}
-
-.ObjectRecPage > * {
-  margin: 3px 0;
-}
-
-.header {
   text-align: center;
 }
 
-.header p {
-  margin: 5px 0;
+.ObjectRecRightSide{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-weight: bold;
+  height: auto;
+  width: 50%;
+  align-items: center;
 }
 
-.code {
-  padding: 5px;
-  color: greenyellow;
-  background-color: black;
-  border-radius: 5px;
-}
 
-.content > img {
+
+.ObjectRecTopSide > img {
   display: none;
   width: 100%;
-  max-width: 720px;
-  max-height: 500px;
+  max-width: 800px;
+  max-height: 700px;
   border-radius: 10px;
+  margin-left: 5%;
 }
 
-.content > video {
+.ObjectRecTopSide > video {
   display: none;
   width: 100%;
-  max-width: 720px;
-  max-height: 500px;
+  height: 100%;
+  max-width: 800px;
+  max-height: 700px;
   border-radius: 10px;
+  margin-left: 5%;
 }
 
-.content {
+.ObjectRecTopSide {
   position: relative;
 }
 
-.content > canvas {
+.ObjectRecTopSide > canvas {
   position: absolute;
   top: 0;
   left: 0;
@@ -55,4 +56,111 @@
   height: 100%;
 }
 
+.Image_Btn{
+  font-size: 23px;
+  color: black;
+  font-family: 'BlackHanSans', sans-serif;
+  background: transparent;
+  border-radius: 15px;
+  width: 200px;
+}
 
+.Image_Btn:hover{
+  color: #FFCBA4;
+}
+
+.Video_Btn{
+  font-size: 23px;
+  color: black;
+  font-family: 'BlackHanSans', sans-serif;
+  background: transparent;
+  border-radius: 15px;
+  width: 200px;
+}
+
+.Video_Btn:hover{
+  color: #FFCBA4;
+}
+
+.Webcam_Btn:hover{
+  color: #FFCBA4;
+}
+
+.Webcam_Btn{
+  font-size: 23px;
+  color: black;
+  font-family: 'BlackHanSans', sans-serif;
+  background: transparent;
+  border-radius: 15px;
+  width: 200px;
+}
+
+.objectRecBottomSide{
+  display: flex;
+  align-items: center;
+  width: 720px;
+  justify-content: space-between;
+}
+.ObjectService_Btn{
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.ObjectRecResult{
+  border: solid 2px black;
+  display: flex;
+  width: 720px;
+  height: 600px;
+  align-items: center;
+  text-align: center;
+  display: block;
+  justify-content: center;
+}
+
+.Result_div{
+  text-align: center;
+  margin-top: 40%;
+  margin-bottom: 1%;
+}
+
+.Result_text{
+  font-size: 45px;
+  font-family: 'BlackHanSans', sans-serif;
+  display: inline;
+  text-align: center;
+  margin: 15px;
+}
+
+.Result_Btn
+{
+  font-size: 30px;
+  color: black;
+  font-family: 'BlackHanSans', sans-serif;
+  background: transparent;
+  border-radius: 20px;
+  width: 300px;
+  margin-top: 10%;
+}
+
+.Result_Btn:hover{
+  color: #FFCBA4;
+}
+
+.Clear_Btn{
+  font-size: 30px;
+  color: black;
+  font-family: 'BlackHanSans', sans-serif;
+  background: transparent;
+  border-radius: 20px;
+  width: 720px;
+  margin-bottom: 25px;
+  margin-top : 4%;
+}
+
+.Clear_Btn:hover{
+  color: #FFCBA4;
+}

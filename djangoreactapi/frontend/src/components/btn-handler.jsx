@@ -30,9 +30,9 @@ const ButtonHandler = ({ imageRef, cameraRef, videoRef }) => {
   };
 
   return (
-    <div className="btn-container">
+    <div className="ObjectService_Btn">
       {/* Image Handler */}
-      <input
+      <input 
         type="file"
         accept="image/*"
         style={{ display: "none" }}
@@ -44,16 +44,16 @@ const ButtonHandler = ({ imageRef, cameraRef, videoRef }) => {
         }}
         ref={inputImageRef}
       />
-      <button
+      <button className='Image_Btn'
         onClick={() => {
           // if not streaming
           if (streaming === null) inputImageRef.current.click();
           // closing image streaming
           else if (streaming === "image") closeImage();
-          else alert(`Can't handle more than 1 stream\nCurrently streaming : ${streaming}`); // if streaming video or webcam
+          else alert(`다른 서비스가 실행이 되어, 시작할 수 없습니다\n 실행중인 서비스 : ${streaming}`); // if streaming video or webcam
         }}
       >
-        {streaming === "image" ? "Close" : "Open"} Image
+      사진 인식  {streaming === "image" ? "종료" : "실행"} 
       </button>
 
       {/* Video Handler */}
@@ -71,20 +71,20 @@ const ButtonHandler = ({ imageRef, cameraRef, videoRef }) => {
         }}
         ref={inputVideoRef}
       />
-      <button
+      <button className='Video_Btn'
         onClick={() => {
           // if not streaming
           if (streaming === null || streaming === "image") inputVideoRef.current.click();
           // closing video streaming
           else if (streaming === "video") closeVideo();
-          else alert(`Can't handle more than 1 stream\nCurrently streaming : ${streaming}`); // if streaming webcam
+          else alert(`다른 서비스가 실행이 되어, 시작할 수 없습니다\n 실행중인 서비스 : ${streaming}`); // if streaming webcam
         }}
       >
-        {streaming === "video" ? "Close" : "Open"} Video
+      동영상 인식  {streaming === "video" ? "종료" : "실행"} 
       </button>
 
       {/* Webcam Handler */}
-      <button
+      <button className='Webcam_Btn'
         onClick={() => {
           // if not streaming
           if (streaming === null || streaming === "image") {
@@ -99,10 +99,10 @@ const ButtonHandler = ({ imageRef, cameraRef, videoRef }) => {
             webcam.close(cameraRef.current);
             cameraRef.current.style.display = "none";
             setStreaming(null);
-          } else alert(`Can't handle more than 1 stream\nCurrently streaming : ${streaming}`); // if streaming video
+          } else alert(`다른 서비스가 실행이 되어, 시작할 수 없습니다\n 실행중인 서비스 : ${streaming}`); // if streaming video
         }}
       >
-        {streaming === "camera" ? "Close" : "Open"} Webcam
+      실시간 인식  {streaming === "camera" ? "종료" : "실행"} 
       </button>
     </div>
   );
