@@ -1,4 +1,4 @@
-.WebcamStreamPagePage{
+.WebcamStreamPage{
   width: 92%;
   height: 92vh;
   display: flex;
@@ -83,4 +83,8 @@
   width: 720px;
   margin-bottom: 25px;
   margin-top : 6.5%;
+}
+
+.clear_btn:hover{
+  color: #FFCBA4;
 }
