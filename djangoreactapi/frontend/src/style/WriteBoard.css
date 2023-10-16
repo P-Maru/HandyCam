@@ -72,6 +72,6 @@ th{
 }
 
 .writeBoard_btn:hover{
-  background-color: #6E6E6E;
-  color: white;
+  text-decoration: underline;
+  color: black;
 }
