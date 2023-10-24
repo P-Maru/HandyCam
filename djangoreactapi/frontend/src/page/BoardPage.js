@@ -1,45 +1,28 @@
 import "../style/BoardPage.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useEffect } from "react";
+import React, { useState } from "react";
+axios.defaults.baseURL = "http://127.0.0.1:8000/api";
+export default function BoardPage() {
+  const [BoardList, setBoardList] = useState([]);
 
-function BoardPage() {
-  const boardList = [
-    {
-      id: 1,
-      title: "병원 수어 영상말고 일생생활 수어 영상도 넣어주세요!.",
-      writer: "정세연",
-      date: "2022-04-19",
-    },
-    {
-      id: 2,
-      title: "인식이 제대로 안되는 부분이 있습니다. 데이터를 더 넣어주세요!",
-      writer: "권순규",
-      date: "2022-04-12",
-    },
-    {
-      id: 3,
-      title: "실시간 검색이 제대로 안이루어져있는 것 같아요!",
-      writer: "민선홍",
-      date: "2022-04-03",
-    },
-    {
-      id: 4,
-      title: "오늘의 수어 영상 업로드 종종 부탁드립니다!",
-      writer: "정세연",
-      date: "2022-03-27",
-    },
-    {
-      id: 5,
-      title: "물체 인식이 제대로 안되는 부분이 있습니다. 수정 해주세요!",
-      writer: "권순규",
-      date: "2022-03-20",
-    },
-    {
-      id: 6,
-      title: "수어 인식 및 물체 인식이 제대로 잘 되네요! 감사합니다!",
-      writer: "민선홍",
-      date: "2022-03-13",
-    },
-  ];
+  const fetchBoardList = () => {
+    axios
+      .get("/board_list")
+      .then((response) => {
+        setBoardList(response.data);
+        console.log("asdf");
+      })
+      .catch((error) => {
+        console.log("Error while fetching books:", error);
+      });
+  };
+
+  useEffect(() => {
+    fetchBoardList();
+  }, []);
+
   return (
     <div
       className="background"
@@ -72,18 +55,20 @@ function BoardPage() {
                 </tr>
               </thead>
               <tbody className="boardbody">
-                {boardList.map((board) => (
-                  <tr key={board.id}>
-                    <td>{board.id}</td>
-                    <td>
-                      <Link className="boardname" to={`/BoardPage/${board.id}`}>
-                        {board.title}
-                      </Link>
-                    </td>
-                    <td>{board.writer}</td>
-                    <td>{board.date}</td>
-                  </tr>
-                ))}
+                {BoardList.map((Board) => {
+                  return (
+                    <tr key={Board.board_id}>
+                      <td>{Board.board_id}</td>
+                      <td>
+                        <Link className="boardname" to={"/Board/$board.id"}>
+                          {Board.board_title}
+                        </Link>
+                      </td>
+                      <td>{Board.user}</td>
+                      <td>{Board.write_day}</td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -92,5 +77,3 @@ function BoardPage() {
     </div>
   );
 }
-
-export default BoardPage;
