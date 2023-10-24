@@ -167,7 +167,7 @@ function ObjectRecPage() {
                   물체 인식한 결과 {labelValue} 입니다{" "}
                 </p>
                 <button className="Result_Btn" onClick={handleButtonClick}>
-                  인식한 물체 확인
+                  인식한 물체 수화 링크
                 </button>
               </div>
             )}

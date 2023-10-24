@@ -31,16 +31,7 @@ function SignUpPage() {
           <label>비밀번호</label>
           <input type="password" placeholder="비밀번호" />
         </div>
-        {/* <div class="SignContent">
-          <label>사용자 성별</label>
-              <select class="gender" value={Sex} onchange={onSexHandler} >
-                  {sexlist.map((item)=>(
-                      <option value={item} key={item}>
-                          {item}
-                      </option>
-                  ))}
-              </select>                 
-          </div> */}
+
         <div class="SignContent">
           <label>이메일</label>
           <input type="email" placeholder="이메일" />
@@ -49,16 +40,6 @@ function SignUpPage() {
           <label>전화번호</label>
           <input type="text" placeholder="전화번호" />
         </div>
-        {/* <div class="SignContent">
-          <label>분야</label>
-              <select class="role" value={Role} onchange={onRoleHandler} >
-                  {rolelist.map((item)=>(
-                      <option value={item} key={item}>
-                          {item}
-                      </option>
-                  ))}
-              </select>                 
-          </div> */}
         <Link to="/LoginPage">
           <div class="Btns">
             <button type="submit" id="SignUpSubmit" class="Btn">
