@@ -12,12 +12,16 @@ import HospitalSignPage from "./page/HospitalSignPage.js";
 import DoctorSignlist from "./page/DoctorSignlist.js";
 import DoctorSign from "./page/DoctorSign.js";
 import PatientSignlist from "./page/PatientSignlist.js";
+import PatientSign from "./page/PatientSign.js";
 import DrugSignlist from "./page/DrugSignlist.js";
+import DrugSign from "./page/DrugSign.js";
 import MedicalEquipmentSignlist from "./page/MedicalEquipmentSignlist.js";
+import MedicalEquipmentSign from "./page/MedicalEquipmentSign.js";
 import SchoolSignPage from "./page/SchoolSignPage.js";
 import BoardPage from "./page/BoardPage.js";
 import WriteBoard from "./page/WriteBoard.js";
 import BoardContentPage from "./page/BoardContentPage.js";
+import UpdateBoard from "./page/UpdateBoard.js";
 import NoticePage from "./page/NoticePage.js";
 import NoticeContentPage from "./page/NoticeContentPage.js";
 import WriteNotice from "./page/WriteNotice";
@@ -46,17 +50,25 @@ function App() {
             element={<HospitalSignPage />}
           ></Route>
           <Route path="/DoctorSignlist" element={<DoctorSignlist />}></Route>
-          <Route path="/DoctorSign" element={<DoctorSign />}></Route>
+          <Route path="/DoctorSign/:id" element={<DoctorSign />}></Route>
           <Route path="/PatientSignlist" element={<PatientSignlist />}></Route>
+          <Route path="/PatientSign/:id" element={<PatientSign />}></Route>
           <Route path="/DrugSignlist" element={<DrugSignlist />}></Route>
+          <Route path="/DrugSign/:id" element={<DrugSign />}></Route>
           <Route
             path="/MedicalEquipmentSignlist"
             element={<MedicalEquipmentSignlist />}
           ></Route>
+          <Route
+            path="/MedicalEquipmentSign/:id"
+            element={<MedicalEquipmentSign />}
+          ></Route>
           <Route path="/SchoolSignPage" element={<SchoolSignPage />}></Route>
-          <Route path="/BoardPage" element={<BoardPage />}></Route>
+          <Route path="/BoardPage" exact element={<BoardPage />}></Route>
           <Route path="/BoardPage/:id" element={<BoardContentPage />}></Route>
           <Route path="/WriteBoard" element={<WriteBoard />}></Route>
+          <Route path="/UpdateBoard/" element={<UpdateBoard />}></Route>
+          <Route path="/UpdateBoard/:id" element={<UpdateBoard />}></Route>
           <Route path="/NoticePage" element={<NoticePage />}></Route>
           <Route path="/NoticePage/:id" element={<NoticeContentPage />}></Route>
           <Route path="/WriteNotice" element={<WriteNotice />}></Route>

@@ -98,7 +98,7 @@ CORS_ORIGIN_ALLOW_ALL = True
 ROOT_URLCONF = 'djangoreactapi.urls'
 
 CORS_ALLOW_METHODS = [
-    "GET", "POST",  # GET 및 POST 요청을 허용합니다. 필요에 따라 다른 메서드도 추가 가능합니다.
+    "GET", "POST", "DELETE", "PUT"  # GET 및 POST 요청을 허용합니다. 필요에 따라 다른 메서드도 추가 가능합니다.
 ]
 
 CORS_ALLOW_HEADERS = [

@@ -11,7 +11,7 @@
   margin-top: 3%;
 }
 
-.write_form{
+.write_noticeform{
   width: 800px;
   margin-top: 50px;
   margin-bottom:50px;
@@ -30,28 +30,28 @@ th{
   font-size: 20pt;
 }
 
-.write_name{
+.write_noticename{
   border: 2px solid #6E6E6E;
   border-radius: 5px;
   height: 30px;
   width: 100%;
 }
 
-.write_title{
+.write_noticetitle{
   border: 2px solid #6E6E6E;
   border-radius: 5px;
   height: 30px;
   width: 100%;
 }
 
-.write_content{
+.write_noticecontent{
   border: 2px solid #6E6E6E;
   border-radius: 5px;
   width: 100%;
-  height: 200px;
+  height: 500px;
 }
 
-.write_pw{
+.write_noticepw{
   border: 2px solid #6E6E6E;
   border-radius: 5px;
   height: 30px;

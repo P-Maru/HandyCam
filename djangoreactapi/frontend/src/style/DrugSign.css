@@ -1,0 +1,137 @@
+.DrugSign{
+  width: 92%;
+  height: 92vh;
+  display: flex;
+  margin: 0 auto;
+}
+
+.HospitalleftSide{
+  width: 20%;
+  border-right: 3px solid black;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  font-family: 'BlackHanSans', sans-serif;
+}
+
+.HospitalleftSideBtn{
+  display: flex;
+  justify-content: space-between;  
+  position: relative;
+  flex-direction: column;
+  font-weight: bold;
+  margin-top: 20%;
+  height: 50%;
+  align-items: center;
+}
+
+#DrugSignlistBtn{
+  width: fit-content;
+  display: inline-block;
+  font-size:35px;
+  color: #FFCBA4;
+  font-family: 'BlackHanSans', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.DrugSignlistBtn:hover{
+  color : #FFCBA4;
+  border-bottom: 2px solid black;
+  
+}
+
+.DoctorSignlistBtn{
+  display: inline-block;
+  width: fit-content;
+  font-size:35px;
+  color: black;
+  font-family: 'BlackHanSans', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.DoctorSignlistBtn:hover{
+  color : #FFCBA4;
+  border-bottom: 2px solid black;
+}
+
+.PatientSignlistBtn{
+  display: inline-block;
+  width: fit-content;
+  font-size:35px;
+  color: black;
+  font-family: 'BlackHanSans', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.PatientSignlistBtn:hover{
+  color : #FFCBA4;
+  border-bottom: 2px solid black;
+}
+
+.MedicalEquipmentSignlistBtn{
+  display: inline-block;
+  width: fit-content;
+  font-size:35px;
+  color: black;
+  font-family: 'BlackHanSans', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.MedicalEquipmentSignlistBtn:hover{
+  color : #FFCBA4;
+  border-bottom: 2px solid black;
+}
+
+#HospitalTitle{
+  margin-top: 20%;
+  font-size: 30pt;
+}
+
+.HospitalrightSide{
+  display: inline-block;
+  margin-top: 3%;
+  position: relative;
+  flex-direction: column;
+  font-weight: bold;
+  height: auto;
+  width: 80%;
+  align-items: center;
+  margin-left: 5%;
+}
+
+#DrugSignContent{
+  display: flex;
+  margin-top: 5%;
+  height: 200px;
+}
+
+#DrugSignExplain{
+  font-size:30px;
+  color: black;
+  font-family: 'BlackHanSans', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+#DrugSignTitle{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-size: 30px;
+}
+
+#DrugSignAction{
+  font-size: 20px;
+  color: #FFCBA4;
+}
+
+#SignExplain{
+  font-size:15px;
+  color: black;
+}

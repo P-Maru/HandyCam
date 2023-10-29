@@ -21,12 +21,12 @@ from PIL import ImageFont, ImageDraw, Image
 import time
 import os
 # Create your views here.
-actions = ['배가','팔이','머리가','다리가','눈이','어깨가','조금','많이','적당히','아픕니다.']
+actions = ['머리가','다리가','눈이','아픕니다.','기침이 납니다.','어지럼증이 있습니다.','열이 납니다.','허리가','부어오릅니다.']
 seq_length = 30
 
 #model = keras.models.load_model('/models/model.h5')
     
-model_path = os.path.join(os.path.dirname(__file__), "models", "model2.h5")
+model_path = os.path.join(os.path.dirname(__file__), "models", "model4.h5")
 
 # 모델 불러오기
 model = keras.models.load_model(model_path)

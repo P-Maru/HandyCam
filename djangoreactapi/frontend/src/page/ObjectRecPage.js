@@ -20,18 +20,46 @@ function ObjectRecPage() {
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const [labelValue, setLabelValue] = useState("");
-  const modelName = "phone";
+  const modelName = "best";
   const classThreshold = 0.2;
 
   const handleButtonClick = () => {
+    alert(`인식한 물체는 ${labelValue} 입니다.`);
     const url = videoRef.current.src;
     videoRef.current.src = ""; // restore video source
     videoRef.current.style.display = "none"; // hide video
     // 또는 다른 사용자 정의 동작을 수행할 수 있습니다.
-
-    window.open(
-      "https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=4399&top_category=CTE&category=&searchKeyword=%EC%A0%84%ED%99%94%EA%B8%B0&searchCondition=&search_gubun=&museum_type=00&current_pos_index=1"
-    );
+    if (labelValue == "phone") {
+      window.open(
+        "https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=4399&top_category=CTE&category=&searchKeyword=%EC%A0%84%ED%99%94%EA%B8%B0&searchCondition=&search_gubun=&museum_type=00&current_pos_index=1"
+      );
+    } else if (labelValue == "bed") {
+      window.open(
+        "https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=6053&top_category=CTE&category=&searchKeyword=%EC%B9%A8%EB%8C%80&searchCondition=&search_gubun=&museum_type=00&current_pos_index=0"
+      );
+    } else if (labelValue == "cup") {
+      window.open(
+        "https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=10581&top_category=CTE&category=&searchKeyword=%EC%BB%B5&searchCondition=&search_gubun=&museum_type=00&current_pos_index=1"
+      );
+    } else if (labelValue == "scissors") {
+      window.open(
+        "https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=6883&top_category=CTE&category=&searchKeyword=%EA%B0%80%EC%9C%84&searchCondition=&search_gubun=&museum_type=00&current_pos_index=0"
+      );
+    } else if (labelValue == "medicine") {
+      window.open(
+        "https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=11990&top_category=CTE&category=&searchKeyword=%EC%95%BD&searchCondition=&search_gubun=&museum_type=00&current_pos_index=0"
+      );
+    } else if (labelValue == "syringe") {
+      window.open(
+        "https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=14955&top_category=SPE&category=&searchKeyword=%EC%A3%BC%EC%82%AC%EA%B8%B0&searchCondition=&search_gubun=&museum_type=00&current_pos_index=0"
+      );
+    } else if (labelValue == "pen") {
+      window.open(
+        "https://sldict.korean.go.kr/front/sign/signContentsView.do?origin_no=7841&top_category=CTE&category=&searchKeyword=%ED%8E%9C&searchCondition=&search_gubun=&museum_type=00&current_pos_index=1"
+      );
+    } else {
+      alert(`해당하는 물체의 수화가 존재하지 않습니다.`);
+    }
   };
 
   useEffect(() => {
