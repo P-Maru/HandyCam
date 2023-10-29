@@ -16,23 +16,23 @@ function WriteNotice() {
       <h1 className="title_name">공지사항 글 작성</h1>
       <div className="WriteNotice">
         <form>
-          <table className="write_form" width="800">
+          <table className="write_noticeform" width="800">
             <tr>
               <th>이름</th>
               <td>
-                <input className="write_name" type="text"></input>
+                <input className="write_noticename" type="text"></input>
               </td>
             </tr>
             <tr>
               <th>제목</th>
               <td>
-                <input className="write_title" type="text"></input>
+                <input className="write_noticetitle" type="text"></input>
               </td>
             </tr>
             <tr>
               <th>내용</th>
               <td>
-                <textarea className="write_content"></textarea>
+                <textarea className="write_noticecontent"></textarea>
               </td>
             </tr>
             <tr>

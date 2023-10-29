@@ -1,5 +1,5 @@
 import labels from "./labels.json";
-import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 class Colors {
   // ultralytics color palette https://ultralytics.com/
   constructor() {
@@ -33,9 +33,11 @@ class Colors {
   static hexToRgba = (hex, alpha) => {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
     return result
-      ? `rgba(${[parseInt(result[1], 16), parseInt(result[2], 16), parseInt(result[3], 16)].join(
-          ", "
-        )}, ${alpha})`
+      ? `rgba(${[
+          parseInt(result[1], 16),
+          parseInt(result[2], 16),
+          parseInt(result[3], 16),
+        ].join(", ")}, ${alpha})`
       : null;
   };
 }
@@ -104,7 +106,10 @@ export const renderBoxes = (
     ctx.fillRect(x1, y1, width, height);
     // draw border box.
     ctx.strokeStyle = color;
-    ctx.lineWidth = Math.max(Math.min(ctx.canvas.width, ctx.canvas.height) / 200, 2.5);
+    ctx.lineWidth = Math.max(
+      Math.min(ctx.canvas.width, ctx.canvas.height) / 200,
+      2.5
+    );
     ctx.strokeRect(x1, y1, width, height);
 
     // Draw the label background.
@@ -126,18 +131,17 @@ export const renderBoxes = (
   }
 
   validPredictions.sort((a, b) => b.score - a.score);
-  console.log(validPredictions)
-  if (validPredictions.length > 0 && validPredictions[0].score > 60.0) {
+  console.log(validPredictions);
+  if (validPredictions.length > 0 && validPredictions[0].score > 50.0) {
     console.log("hi");
     console.log(typeof setLabelValue);
     if (typeof setLabelValue === "function") {
       setLabelValue(validPredictions[0].label); // 가장 높은 확률값만 가져오도록 수정
       console.log("Label Value in renderBoxes:", validPredictions[0].label);
       // const history = useHistory();
-      
+
       // // 페이지 이동
       // history.push('/www.google.com');
     }
-
   }
 };

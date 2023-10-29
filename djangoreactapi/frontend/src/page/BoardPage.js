@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
 import React, { useState } from "react";
-axios.defaults.baseURL = "http://127.0.0.1:8000/api";
+
 export default function BoardPage() {
   const [BoardList, setBoardList] = useState([]);
 
@@ -12,7 +12,6 @@ export default function BoardPage() {
       .get("/board_list")
       .then((response) => {
         setBoardList(response.data);
-        console.log("asdf");
       })
       .catch((error) => {
         console.log("Error while fetching books:", error);
@@ -60,11 +59,14 @@ export default function BoardPage() {
                     <tr key={Board.board_id}>
                       <td>{Board.board_id}</td>
                       <td>
-                        <Link className="boardname" to={"/Board/$board.id"}>
+                        <Link
+                          className="boardname"
+                          to={`/BoardPage/${Board.board_id}`}
+                        >
                           {Board.board_title}
                         </Link>
                       </td>
-                      <td>{Board.user}</td>
+                      <td>{Board.nickname}</td>
                       <td>{Board.write_day}</td>
                     </tr>
                   );

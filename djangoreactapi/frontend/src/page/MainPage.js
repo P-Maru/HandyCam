@@ -1,8 +1,40 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../style/MainPage.css";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 
-function MainPage() {
+export default function MainPage() {
+  const rank = [];
+  const sub_rank = [];
+  const [titlesUpToIndex3, setTitlesUpToIndex3] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`/video_list`)
+      .then((response) => {
+        const data = response.data;
+        for (let i = 0; i < data.length; i++) {
+          rank.push(data[i]);
+        }
+        for (let j = 0; j < data.length; j++) {
+          sub_rank.push(rank[j][4]);
+        }
+        const countAndTitleArray = data.map((item) => ({
+          count: item.count,
+          video_title: item.video_title,
+        }));
+        const sortedCountAndTitleArray = countAndTitleArray.sort(
+          (a, b) => b.count - a.count
+        );
+        const titles = sortedCountAndTitleArray
+          .slice(0, 3)
+          .map((item) => item.video_title);
+        setTitlesUpToIndex3(titles);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <div
       className="background"
@@ -27,9 +59,9 @@ function MainPage() {
           <div className="rightSide">
             <h1> 실시간 검색순위 </h1>
             <ol className="real-time-order">
-              <li>감기에 걸렸어요</li>
-              <li>배가 아파요</li>
-              <li>어디가 아프신가요?</li>
+              {titlesUpToIndex3.map((title, index) => (
+                <li key={index}>{title}</li>
+              ))}
             </ol>
           </div>
         </div>
@@ -79,4 +111,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+// export default MainPage;

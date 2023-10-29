@@ -1,19 +1,40 @@
 import "../style/DoctorSign.css";
 import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+axios.defaults.baseURL = "http://127.0.0.1:8000/api";
 
-function DoctorSign() {
+export default function DoctorSign() {
+  const { id: video_id } = useParams();
+  const [Doctorvideo, setDoctorSign] = useState({
+    video_src: "",
+    video_title: "",
+    video_explain: "",
+  });
+
+  useEffect(() => {
+    axios
+      .get(`/doctor_list/${video_id}`)
+      .then((response) => {
+        setDoctorSign(response.data);
+      })
+      .catch((error) => {
+        console.log("Error while fetching board content:", error);
+      });
+  }, [video_id]);
   return (
     <div
       className="background"
       style={{
-        backgroundImage: "url(./background.png)",
+        backgroundImage: "url(../background.png)",
         backgroundSize: "cover",
         width: "100%",
         height: "auto",
         backgroundRepeat: "repeat-y",
       }}
     >
-      <div className="HospitalSignPage">
+      <div className="DoctorSign">
         <div className="HospitalleftSide">
           <h1 id="HospitalTitle">병원생활 수어</h1>
           <div className="HospitalleftSideBtn">
@@ -39,18 +60,17 @@ function DoctorSign() {
             <iframe
               width="500"
               height="400"
-              src="https://www.youtube.com/embed/9vx9O6x6Su8"
+              src={Doctorvideo.doctor_src}
+              s
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
             <div id="DoctorSignExplain">
-              <p id="DoctorSignTitle">어디가 아프신가요?</p>
+              <p id="DoctorSignTitle">{Doctorvideo.doctor_title}</p>
               <p id="DoctorSignAction">수형 설명</p>
-              <p id="SignExplain">
-                손을 내밀고 손바닥을 위로하여 흔든 뒤, 검지손가락만 들어 흔든다.
-              </p>
+              <p id="SignExplain">{Doctorvideo.doctor_explain}</p>
             </div>
           </div>
         </div>
@@ -58,5 +78,3 @@ function DoctorSign() {
     </div>
   );
 }
-
-export default DoctorSign;

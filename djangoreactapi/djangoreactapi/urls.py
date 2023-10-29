@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from post.api import MemberList,MemberDetail,BoardDetail,BoardList,SearchDetail,SearchList
+from post.api import MemberList,MemberDetail,BoardDetail,BoardList,SearchDetail,SearchList,NoticeList,NoticeDetail,VideoList,VideoDetail,DoctorList,DoctorDetail,PatientList,PatientDetail,EqeuipmentList,EqeuipmentDetail,DrugList,DrugDetail
 
 
 
@@ -29,4 +29,16 @@ urlpatterns = [
     path('api/board_list/<int:board_id>',BoardDetail.as_view(),name='board_list'),
     path('api/search_list',SearchList.as_view(),name='search_list'),
     path('api/search_list/<int:serach_id>',SearchDetail.as_view(),name='search_list'),
+    path('api/notice_list',NoticeList.as_view(),name='notice_list'),
+    path('api/notice_list/<int:notice_id>',NoticeDetail.as_view(),name='notice_list'),
+    path('api/video_list',VideoList.as_view(),name='video_list'),
+    path('api/video_list/<int:video_id>',VideoDetail.as_view(),name='video_list'),
+        path('api/doctor_list',DoctorList.as_view(),name='doctor_list'),
+    path('api/doctor_list/<int:doctor_id>',DoctorDetail.as_view(),name='doctor_list'),
+    path('api/patient_list',PatientList.as_view(),name='patient_list'),
+    path('api/patient_list/<int:patient_id>',PatientDetail.as_view(),name='patient_list'),
+    path('api/drug_list',DrugList.as_view(),name='drug_list'),
+    path('api/drug_list/<int:drug_id>',DrugDetail.as_view(),name='drug_list'),
+    path('api/eqeuipment_list',EqeuipmentList.as_view(),name='eqeuipment_list'),
+    path('api/eqeuipment_list/<int:eqeuipment_id>',EqeuipmentDetail.as_view(),name='eqeuipment_list'),
 ]
