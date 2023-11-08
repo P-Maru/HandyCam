@@ -38,11 +38,7 @@
 
 🤚 <b>수화 인식</b></br></br>
 
-![weather1](https://github.com/seyeonJeong/Git/assets/81068870/17057a5c-f7cc-4a98-a04b-ef2a8019f7fb)
-![weather2](https://github.com/seyeonJeong/Git/assets/81068870/9c86463e-c55d-4313-a80e-976629ba49cc)
-![weather3](https://github.com/seyeonJeong/Git/assets/81068870/67e03c82-bb74-4e28-a86a-96caddd905c6)
-![weather4](https://github.com/seyeonJeong/Git/assets/81068870/0fe9a625-25f3-47a6-b797-6aa7c052a915)
-![weather5](https://github.com/seyeonJeong/Git/assets/81068870/1ce2fbbf-f173-4cb5-b6fc-c648a4fe73a8) </br></br>
+![수화](https://github.com/P-Maru/HandyCam/assets/81068870/c456c637-ff2e-4502-808b-4ffd796a5686) </br></br>
 
 🩺 <b>물체 인식</b></br></br>
 ![traffic1](https://github.com/seyeonJeong/Git/assets/81068870/0552578e-9b43-4f24-b3f5-fc08c2daf4ea)
