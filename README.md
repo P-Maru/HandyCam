@@ -37,7 +37,9 @@
 ## 주요 기능
 
 🤚 <b>수화 인식</b></br></br>
-<img src="https://github.com/P-Maru/HandyCam/assets/81068870/c456c637-ff2e-4502-808b-4ffd796a5686"  width="700" height="370">
+<p align="center">
+  <img src="(https://github.com/P-Maru/HandyCam/assets/81068870/c456c637-ff2e-4502-808b-4ffd796a5686)">
+</p>
 
 🩺 <b>물체 인식</b></br></br>
 ![물체](https://github.com/P-Maru/HandyCam/assets/81068870/109b6407-5e01-44cd-9bff-f55818f2aecc) </br></br>
