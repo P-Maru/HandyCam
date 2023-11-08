@@ -30,15 +30,13 @@
 💻 OpenSource</br></br>
 <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=OpenCV&logoColor=white"></br>
 <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=white"></br>
-<img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=YOLO&logoColor=white"></br></br>
-🤚 Mediapipe
-## 사용 데이터
+<img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=YOLO&logoColor=white"></br>
+🤚 Mediapipe</br>
 
-[✨ Corweather-data ✨] (https://github.com/DataCrewCorweather/data) 참조
 
-## 구현 기능
+## 주요 기능
 
-⛅ <b>날씨</b></br></br>
+🤚 <b>수화 인식</b></br></br>
 
 ![weather1](https://github.com/seyeonJeong/Git/assets/81068870/17057a5c-f7cc-4a98-a04b-ef2a8019f7fb)
 ![weather2](https://github.com/seyeonJeong/Git/assets/81068870/9c86463e-c55d-4313-a80e-976629ba49cc)
@@ -46,12 +44,10 @@
 ![weather4](https://github.com/seyeonJeong/Git/assets/81068870/0fe9a625-25f3-47a6-b797-6aa7c052a915)
 ![weather5](https://github.com/seyeonJeong/Git/assets/81068870/1ce2fbbf-f173-4cb5-b6fc-c648a4fe73a8) </br></br>
 
-🚕 <b>교통</b></br></br>
+🩺 <b>물체 인식</b></br></br>
 ![traffic1](https://github.com/seyeonJeong/Git/assets/81068870/0552578e-9b43-4f24-b3f5-fc08c2daf4ea)
 ![traffic2](https://github.com/seyeonJeong/Git/assets/81068870/70f409b8-42f4-4d56-9364-851ecd538f7d)
 ![traffic3](https://github.com/seyeonJeong/Git/assets/81068870/0fbd0e8d-759b-42e6-b552-314f6f50694c)
 ![traffic4](https://github.com/seyeonJeong/Git/assets/81068870/784fd405-6ed0-4518-b3eb-827c3800c9f0)
 ![traffic5](https://github.com/seyeonJeong/Git/assets/81068870/3c3f4275-c2b8-48a5-bfe8-60e78d45d2d9) </br></br>
-
-📊 <b>날씨&교통</b></br></br>
 
