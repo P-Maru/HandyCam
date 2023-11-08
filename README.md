@@ -38,7 +38,7 @@
 
 🤚 <b>수화 인식</b></br></br>
 <p align="center">
-  <img src="https://github.com/P-Maru/HandyCam/assets/81068870/c456c637-ff2e-4502-808b-4ffd796a5686.png" width="200" height="400">
+  <img src="https://github.com/P-Maru/HandyCam/assets/81068870/c456c637-ff2e-4502-808b-4ffd796a5686.png" width="500" height="500">
 </p>
 
 🩺 <b>물체 인식</b></br></br>
