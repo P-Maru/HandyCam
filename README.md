@@ -15,10 +15,11 @@
 👉 이를 통해 청각장애우들의 병원에서의 원활한 의사소통 기대
 
 ## 멤버
-
-정세연 (https://github.com/seyeonJeong)</br>
-권순규 (https://github.com/kwonsoongyu)</br>
-민선홍 (https://github.com/Minseonhong)</br>
+|이름|역할|Git|
+|---|---|---|
+|정세연|BackEnd|(https://github.com/seyeonJeong)|
+|권순규|BackEnd|(https://github.com/kwonsoongyu)|
+|민선홍|FrontEnd|(https://github.com/Minseonhong)|
 
 ## 기술 스택
 
