@@ -44,4 +44,4 @@
 ![물체](https://github.com/P-Maru/HandyCam/assets/81068870/109b6407-5e01-44cd-9bff-f55818f2aecc) </br></br>
 
 ## 포스터
-[[2-10]_HandyCam(LSTM 기반 의료 수화 번역 웹 애플리케이션)_작품포스터 (1).pdf](https://github.com/P-Maru/HandyCam/files/13298009/2-10._HandyCam.LSTM._.1.pdf) </br></br>
+![포스터](https://github.com/P-Maru/HandyCam/assets/81068870/033d6293-83ba-41de-bd4c-07e88c75e108) </br></br>
