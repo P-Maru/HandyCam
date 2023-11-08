@@ -1,5 +1,5 @@
 
-# CorWeather
+# HandyCam
 2023년 충북대학교 캡스톤 디자인 출품작 HandyCam 
 
 
@@ -27,7 +27,11 @@
 👨‍💻 Back-end</br></br>
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/></br>
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white"></br></br>
-
+💻 OpenSource</br></br>
+<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=OpenCV&logoColor=white"></br>
+<img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=white"></br>
+<img src="https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logo=YOLO&logoColor=white"></br>
++ Mediapipe
 ## 사용 데이터
 
 [✨ Corweather-data ✨] (https://github.com/DataCrewCorweather/data) 참조
