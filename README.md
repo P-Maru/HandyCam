@@ -41,9 +41,5 @@
 ![수화](https://github.com/P-Maru/HandyCam/assets/81068870/c456c637-ff2e-4502-808b-4ffd796a5686) </br></br>
 
 🩺 <b>물체 인식</b></br></br>
-![traffic1](https://github.com/seyeonJeong/Git/assets/81068870/0552578e-9b43-4f24-b3f5-fc08c2daf4ea)
-![traffic2](https://github.com/seyeonJeong/Git/assets/81068870/70f409b8-42f4-4d56-9364-851ecd538f7d)
-![traffic3](https://github.com/seyeonJeong/Git/assets/81068870/0fbd0e8d-759b-42e6-b552-314f6f50694c)
-![traffic4](https://github.com/seyeonJeong/Git/assets/81068870/784fd405-6ed0-4518-b3eb-827c3800c9f0)
-![traffic5](https://github.com/seyeonJeong/Git/assets/81068870/3c3f4275-c2b8-48a5-bfe8-60e78d45d2d9) </br></br>
+![물체](https://github.com/P-Maru/HandyCam/assets/81068870/109b6407-5e01-44cd-9bff-f55818f2aecc) </br></br>
 
