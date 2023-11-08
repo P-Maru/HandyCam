@@ -39,13 +39,20 @@
 🤚 <b>수화 인식</b></br></br>
 <p align="center">
   <img src="https://github.com/P-Maru/HandyCam/assets/81068870/c456c637-ff2e-4502-808b-4ffd796a5686.png" width="700" height="500">
-</p>
+</p> </br></br>
 
 🩺 <b>물체 인식</b></br></br>
-![물체](https://github.com/P-Maru/HandyCam/assets/81068870/109b6407-5e01-44cd-9bff-f55818f2aecc) </br></br>
+<p align="center">
+  <img src="https://github.com/P-Maru/HandyCam/assets/81068870/109b6407-5e01-44cd-9bff-f55818f2aecc.png" width="700" height="500">
+</p>
+</br></br>
 
 ## 포스터
-![포스터](https://github.com/P-Maru/HandyCam/assets/81068870/033d6293-83ba-41de-bd4c-07e88c75e108) </br></br>
+<p align="center">
+  <img src="https://github.com/P-Maru/HandyCam/assets/81068870/033d6293-83ba-41de-bd4c-07e88c75e108.png" width="700" height="500">
+</p></br></br>
 
 ## 수상
-![수상](https://github.com/P-Maru/HandyCam/assets/81068870/3aead677-4ab9-4d47-8351-61eaf7852719) </br></br>
+<p align="center">
+  <img src="https://github.com/P-Maru/HandyCam/assets/81068870/3aead677-4ab9-4d47-8351-61eaf7852719.png" width="700" height="500">
+</p></br></br>
