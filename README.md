@@ -4,6 +4,7 @@
 
 
 [✨ HandyCam - 문서 ✨] (https://github.com/P-Maru/Documentation)
+[✨ HandyCam - AI ✨] (https://github.com/seyeonJeong/HandyCam_AI)
 
 
 ## 프로젝트 목표
